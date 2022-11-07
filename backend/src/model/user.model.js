@@ -1,12 +1,12 @@
 const mongoose=require("mongoose")
-const UserSchema=mongoose.Schema({
 
-    firstname:{type:String,required:true},
-    lastname:{type:String,required:true},
-    age:{type:String,required:true},
-    email:{type:String,required:true},
-    password:{type:String,required:true}
+const UserSchema=mongoose.Schema({
+name:{type:String,required:true},
+email:{type:String,required:true},
+password:{type:String,required:true},
+// ipaddress:{ipaddress:true}
 })
-const UserModel=mongoose.model("User",UserSchema)
+
+const UserModel=mongoose.model("userdata",UserSchema)
 
 module.exports={UserModel}
